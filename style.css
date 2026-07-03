@@ -852,38 +852,24 @@ box-shadow:
     color:white;
 }
 
-@media(max-width:768px){
-
-    .menu-toggle{
-        display:block;
-    }
-
-    .nav-links{
-        
-        
-        width:100%;
-        position:absolute;
-        top:100%;
-        left:0;
-        
-    }
-
-    .nav-links.active{
-        display:flex;
-    }
-}
-
 /* ================= MOBILE VIEW ================= */
+
 @media (max-width:768px){
 
-    /* ---------- NAVBAR ---------- */
+    body{
+        overflow-x:hidden;
+    }
 
     nav{
+        padding:15px 20px;
         display:flex;
         justify-content:space-between;
         align-items:center;
-        padding:15px 20px;
         position:relative;
+    }
+
+    .fed{
+        font-size:24px;
     }
 
     .menu-toggle{
@@ -904,7 +890,7 @@ box-shadow:
         text-align:center;
         padding:20px 0;
         gap:20px;
-        z-index:1000;
+        z-index:999;
     }
 
     .nav-links.active{
@@ -913,30 +899,15 @@ box-shadow:
 
     .nav-right{
         display:none;
-        flex-direction:column;
-        align-items:center;
-        width:100%;
-        background:#000;
-        padding-bottom:20px;
-        gap:15px;
-    }
-
-    .nav-right.active{
-        display:flex;
-    }
-
-    .fed{
-        font-size:28px;
     }
 
     /* ---------- HOME ---------- */
 
     .intro{
-        display:flex;
         flex-direction:column-reverse;
         text-align:center;
+        padding:25px 20px;
         gap:25px;
-        padding:20px;
     }
 
     .home .intro-text{
@@ -945,32 +916,34 @@ box-shadow:
     }
 
     .intro-text h1{
-        font-size:50px;
+        font-size:55px;
     }
 
     .text-color{
-        font-size:32px;
+        font-size:36px;
     }
 
     .profile{
         width:180px;
         height:180px;
-        margin:20px auto;
+        margin:auto;
     }
 
-    .buttons,
-    .icons{
+    .buttons{
         justify-content:center;
         flex-wrap:wrap;
+    }
+
+    .icons{
+        justify-content:center;
     }
 
     /* ---------- ABOUT ---------- */
 
     .about{
-        display:flex;
         flex-direction:column;
-        gap:30px;
         padding:30px 20px;
+        gap:30px;
     }
 
     .ableft,
@@ -978,18 +951,9 @@ box-shadow:
         width:100%;
     }
 
-    .ableft{
-        text-align:center;
-    }
-
-    .abphara{
-        max-width:100%;
-    }
-
     .ab-right{
         display:grid;
         grid-template-columns:1fr;
-        gap:15px;
     }
 
     .box{
@@ -1003,16 +967,12 @@ box-shadow:
     .skillsq,
     .abcd,
     .footer{
-        padding:20px;
+        padding:30px 20px;
     }
 
     .skills{
         justify-content:center;
         gap:20px;
-    }
-
-    .skill{
-        width:130px;
     }
 
     /* ---------- LEARNING ---------- */
@@ -1028,7 +988,6 @@ box-shadow:
     /* ---------- CONTACT ---------- */
 
     .contact{
-        display:flex;
         flex-direction:column;
         gap:30px;
     }
@@ -1046,10 +1005,8 @@ box-shadow:
         margin:10px 0;
         box-sizing:border-box;
     }
-    .nav-links{
-        right:0;
-        left:0;
-        box-sizing:border-box
+
+    .right textarea{
+        height:140px;
     }
 }
-
