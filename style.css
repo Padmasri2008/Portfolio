@@ -1046,12 +1046,10 @@ box-shadow:
         margin:10px 0;
         box-sizing:border-box;
     }
-}
-.menu-toggle{
-    display:none;
-}
-
-.nav-links{
-    display:flex;
+    .nav-links{
+        right:0;
+        left:0;
+        box-sizing:border-box
+    }
 }
 
