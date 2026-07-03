@@ -859,13 +859,13 @@ box-shadow:
     }
 
     .nav-links{
-        display:none;
-        flex-direction:column;
+        
+        
         width:100%;
         position:absolute;
-        top:70px;
+        top:100%;
         left:0;
-        background:#000;
+        
     }
 
     .nav-links.active{
