@@ -31,3 +31,11 @@ toggle.addEventListener("click",function(){
         toggle.innerHTML="🌙";
     }
 });
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+const navRight = document.querySelector(".nav-right");
+
+menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+    navRight.classList.toggle("active");
+});
